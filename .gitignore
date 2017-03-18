@@ -1,0 +1,6 @@
+dist
+.idea
+*.*___jb_tmp___
+node_modules
+coverage
+*.log
