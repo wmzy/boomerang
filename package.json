@@ -1,29 +1,27 @@
 {
   "name": "boomerang",
   "version": "0.0.0",
-  "description": "",
+  "description": "play with json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmzy/boomerang"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
     "start": "node --harmony server/app"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["json-server"],
+  "author": "wmzy",
   "license": "ISC",
   "dependencies": {
-    "URLON": "^2.0.0",
     "json-schema-faker": "^0.4.0",
     "koa": "^2.0.0",
     "koa-bodyparser": "^4.1.0",
     "koa-router": "^7.0.1",
-    "koa-static": "^3.0.0",
     "lodash": "^4.17.4",
     "lz-string": "^1.4.4",
-    "pug": "^2.0.0-beta11"
+    "urlon": "^2.0.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^2.28.0",
-    "pug-loader": "^2.3.0",
-    "webpack": "^2.2.1"
   }
 }

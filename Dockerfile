@@ -2,12 +2,11 @@ FROM node:7-alpine
 
 MAINTAINER 1256573276@qq.com
 
-COPY ./ /home/work/project/json-server
+COPY ./ /home/work/code
 
-WORKDIR /home/work/project/json-server
+WORKDIR /home/work/code
 
-RUN npm i
-RUN npm run build
+RUN npm i --production
 
 CMD npm start
 

@@ -1,9 +1,7 @@
-const path = require('path');
 const Koa = require('koa');
-const staticServe = require('koa-static');
 const bodyParser = require('koa-bodyparser');
 const Router = require('koa-router');
-const URLON = require('URLON');
+const URLON = require('urlon');
 
 const router = new Router();
 
@@ -13,8 +11,6 @@ router
   });
 
 const app = new Koa();
-
-app.use(staticServe(path.resolve(__dirname, '../public')));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
