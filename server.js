@@ -4,7 +4,7 @@ const Router = require('koa-router');
 const URLON = require('urlon');
 const jsf = require('json-schema-faker');
 
-const router = new Router();
+const router = new Router({prefix: '/api/v1'});
 
 router
   .all('/raw/:jsonString', ctx => {
