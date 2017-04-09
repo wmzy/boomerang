@@ -8,13 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony server/app"
+    "start": "node --harmony server"
   },
-  "keywords": ["json-server"],
+  "keywords": [
+    "json-server"
+  ],
   "author": "wmzy",
   "license": "ISC",
   "dependencies": {
-    "json-schema-faker": "^0.4.0",
+    "json-schema-faker": "^0.4.1",
     "koa": "^2.0.0",
     "koa-bodyparser": "^4.1.0",
     "koa-router": "^7.0.1",
@@ -22,6 +24,5 @@
     "lz-string": "^1.4.4",
     "urlon": "^2.0.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
