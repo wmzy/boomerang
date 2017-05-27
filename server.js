@@ -7,10 +7,10 @@ const jsf = require('json-schema-faker');
 const router = new Router({prefix: '/api/v1'});
 
 router
-  .all('/raw/:jsonString', ctx => {
+  .all('/raw/:jsonString(.*)', ctx => {
     ctx.body = URLON.parse(ctx.params.jsonString);
   })
-  .all('/schema/:jsonString', ctx => {
+  .all('/schema/:jsonString(.*)', ctx => {
     const schema = URLON.parse(ctx.params.jsonString);
     ctx.body = jsf(schema);
   })
